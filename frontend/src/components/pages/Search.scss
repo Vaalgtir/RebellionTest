@@ -1,0 +1,103 @@
+
+.wrapper__Search {
+    color: white;
+
+    height: 100vh;
+
+	background: #36405e;
+	background: -webkit-linear-gradient(top left, #36405e 0%, #5381e3 100%);
+	background: -moz-linear-gradient(top left, #36405e 0%, #5381e3 100%);
+	background: -o-linear-gradient(top left, #36405e 0%, #5381e3 100%);
+	background: linear-gradient(to bottom right, #36405e 0%, #5381e3 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	& input{
+		display: block;
+		appearance: none;
+		outline: 0;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		background-color: rgba(255, 255, 255, 0.2);
+		width: 250px;
+		
+		border-radius: 3px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		
+		color: white;
+		
+		transition-duration: 0.25s;
+		font-weight: 300;
+		
+		&:hover{
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+		
+		&:focus{
+			background-color: white;
+			width: 300px;
+			
+			color: #36405e;
+		}
+        &::placeholder {
+            color: white;
+          }
+	}
+	& button{
+		appearance: none;
+		outline: 0;
+		padding: 10px 15px;
+        margin: 0 1rem;
+
+		background-color: white;
+		color: #36405e;
+		border-radius: 3px;
+		border: 2px solid white;
+		cursor: pointer;
+		font-size: 18px;
+		transition-duration: 0.25s;
+		
+		&:hover{
+			background-color:transparent;
+			color: white;
+		}
+	}
+    &__form {
+        padding: 3vh 2rem;
+        margin-bottom: 1rem;
+
+        background-color: #36405e69;
+        border: solid 2px #36405e69;
+        border-radius: 3px;
+        & h1 {
+            margin-bottom: 1rem;
+        }
+        & input {
+            margin-top: 1rem;
+        }
+    }
+    &__results {
+        &  .item {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+            cursor: pointer;
+            transition: all 500ms;
+            font-size: 1.5rem;
+            margin: 1vh 0;
+            &:hover {
+                color: #97abe5;
+            }
+        }
+
+        & .wrapper__Search__button {
+            margin: 1rem;
+        }
+    }
+}

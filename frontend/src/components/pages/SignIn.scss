@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+// @prim: #36405e;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+	font-weight: 300;
+}
+
+.wrapper{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-weight: 300;
+	
+	::-webkit-input-placeholder { /* WebKit browsers */
+		font-family: 'Source Sans Pro', sans-serif;
+			color:    white;
+		font-weight: 300;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		font-family: 'Source Sans Pro', sans-serif;
+		 color:    white;
+		 opacity:  1;
+		font-weight: 300;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		font-family: 'Source Sans Pro', sans-serif;
+		 color:    white;
+		 opacity:  1;
+		font-weight: 300;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+		font-family: 'Source Sans Pro', sans-serif;
+		 color:    white;
+		font-weight: 300;
+	}
+
+	background: #36405e;
+	background: -webkit-linear-gradient(top left, #36405e 0%, #5381e3 100%);
+	background: -moz-linear-gradient(top left, #36405e 0%, #5381e3 100%);
+	background: -o-linear-gradient(top left, #36405e 0%, #5381e3 100%);
+	background: linear-gradient(to bottom right, #36405e 0%, #5381e3 100%);
+		
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	
+	& .form-success{
+		transform: translateY(15vh);
+		font-size: 3rem;
+	}
+}
+
+.container{
+	padding: 23vh 0 0 0;
+	text-align: center;
+
+	
+	h1{
+		font-size: 40px;
+		transition: all 1s ease-in;
+		font-weight: 200;
+	}
+}
+
+form{
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+	transition: opacity 500ms;
+	
+	input{
+		display: block;
+		appearance: none;
+		outline: 0;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		background-color: rgba(255, 255, 255, 0.2);
+		width: 250px;
+		
+		border-radius: 3px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		
+		color: white;
+		
+		transition-duration: 0.25s;
+		font-weight: 300;
+		
+		&:hover{
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+		
+		&:focus{
+			background-color: white;
+			width: 300px;
+			
+			color: #36405e;
+		}
+	}
+	&.valid {
+		opacity: 0;
+	}
+	
+	button{
+		appearance: none;
+		outline: 0;
+		background-color: white;
+		border: 0;
+		padding: 10px 15px;
+		color: #36405e;
+		border-radius: 3px;
+		border: 2px solid white;
+		width: 250px;
+		cursor: pointer;
+		font-size: 18px;
+		transition-duration: 0.25s;
+		
+		&:hover{
+			background-color:transparent;
+			color: white;
+		}
+	}
+}
